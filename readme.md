@@ -65,7 +65,7 @@ Each student "has many" classes they attend, and each class "has many" students.
 ![many to many erd example](https://cloud.githubusercontent.com/assets/3254910/18140903/4c56c3ee-6f6c-11e6-9b6d-4c6ffae81323.png)
 
 
-###Entity Relationship Diagrams
+####Entity Relationship Diagrams
 
 Entity relationship diagrams (ERDs) represent information about the numerical relationships between data, or entities.
 
@@ -76,7 +76,9 @@ Note: In the example above, all of the Item1, Item2, Item3 under each heading ar
 
 [More guidelines for ERDs](http://docs.oracle.com/cd/A87860_01/doc/java.817/a81358/05_dev1.htm)
 
+####Check for Understanding
 
+Come up with an example of related data.  Draw the ERD for your relationship, including a few attributes for each model. 
 
 ###Association Categories for Mongoose
 
@@ -150,7 +152,7 @@ Check out the value associated with the `ingredients` key inside the food schema
 
 #### 2) Manipulate Data with Models
 
-Now that we have our schemas defined, let's compile them all into active models so we can start creating documents!
+Once schemas are defined, we can compile them all into active models so we can start creating documents!
 
 ```js
 /* Compiling models from the above schemas */
@@ -158,7 +160,7 @@ var Food = mongoose.model('Food', foodSchema);
 var Ingredient = mongoose.model('Ingredient', ingredientSchema);
 ```
 
-Let's take our models for a spin and make two objects to test out creating a Ingredient document and Food document.
+Here's how we'd take our models for a spin and make two objects to test out creating a Ingredient document and Food document.
 
 ```js
 /* make a new Ingredient document */
@@ -176,9 +178,9 @@ var cheesyQuiche = new Food ({
 });
 ```
 
-Notice that we start the `ingredients` array empty within our cheesyQuiche food document. That will be filled with ObjectIds later on.
 
-Now we'll save our work.
+
+Don't forget to save your work!
 
 ```js
 cheddar.save(function(err, savedCheese) {
@@ -189,7 +191,7 @@ cheddar.save(function(err, savedCheese) {
   }
 });
 
-cheesyQuiche.ingredients.push(cheddar);
+cheesyQuiche.ingredients.push(cheddar);   // associated!
 cheesyQuiche.save(function(err, savedCheesyQuiche) {
   if (err) {
     return console.log(err);
@@ -202,7 +204,7 @@ cheesyQuiche.save(function(err, savedCheesyQuiche) {
 Note that we push the `cheddar` ingredient document into the `cheesyQuiche` ingredients array. We already told the Food Schema that we will only be storing ObjectIds, though, so `cheddar` gets converted to its unique `_id` when it's pushed in!
 
 
-#### Check for Understanding
+#### Check In
 
 This is the log text after executing the code we've written thus far:
 
