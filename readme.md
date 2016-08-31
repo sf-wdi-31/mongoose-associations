@@ -58,7 +58,9 @@ Each tree "has many" leaves, and each leaf "belongs to" the one tree it grew fro
 
 Each student "has many" classes they attend, and each class "has many" students.
 
-<img src="./img/many_to_many.png" alt="many to many erd"  width="250">
+
+<img src="https://raw.githubusercontent.com/sf-wdi-22-23/modules-23/master/w03-intro-backend-with-express/d4-weekend-lab/img/many_to_many.png" alt="many to many erd"  width="250">
+
 
 ###Entity Relationship Diagrams
 
@@ -199,7 +201,7 @@ cheesyQuiche.save(function(err, savedCheesyQuiche) {
 Note that we push the `cheddar` ingredient document into the `cheesyQuiche` ingredients array. We already told the Food Schema that we will only be storing ObjectIds, though, so `cheddar` gets converted to its unique `_id` when it's pushed in!
 
 
-### Check for Understanding
+#### Check for Understanding
 
 This is the log text after executing the code we've written thus far:
 
