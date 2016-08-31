@@ -447,14 +447,14 @@ Remember RESTful routing? It's the most popular modern convention for designing 
 | | | | |
 |---|---|---|---|
 | **HTTP Verb** | **Path** | **Description** | **Key Mongoose Method(s)** |
-| GET | /stores | Get all stores | `.find` |
-| POST | /stores | Create a store | `new` `.save` |
-| GET | /stores/:id | Get a store | `.findOne` |
-| DELETE | /stores/:id | Delete a store | `.findOne`, `.remove` |
-| GET | /stores/:store_id/items | Get all items from a store | `.findOne`, (`.populate` R) |
-| POST | /stores/:store_id/items | Create an item for a store | `.findOne`, `new`, `.save` |
-| GET | /stores/:store_id/items/:item_id | Get an item from a store | `.findOne`, (`.id` E) |
-| DELETE | /stores/:store_id/items/:item_id | Delete an item from a store | `.findOne`, (`.id` E), `.remove` |
+| GET | /stores | Get all stores | <details><summary>click for ideas</summary>`.find`</details> |
+| POST | /stores | Create a store | <details><summary>click for ideas</summary>`new`, `.save`</details> |
+| GET | /stores/:id | Get a store | <details><summary>click for ideas</summary>`.findOne`</details> |
+| DELETE | /stores/:id | Delete a store | <details><summary>click for ideas</summary>`.findOne`, `.remove`, `.findOneAndRemove`</details> |
+| GET | /stores/:store_id/items | Get all items from a store | <details><summary>click for ideas</summary>`.findOne`, (`.populate` if referenced)</details> |
+| POST | /stores/:store_id/items | Create an item for a store | <details><summary>click for ideas</summary>`.findOne`, `new`, `.save`</details> |
+| GET | /stores/:store_id/items/:item_id | Get an item from a store | <details><summary>click for ideas</summary>`.findOne`</details> |
+| DELETE | /stores/:store_id/items/:item_id | Delete an item from a store | <details><summary>click for ideas</summary>`.findOne`, `.remove`</details> |
 
 *In routes, avoid nesting resources more than one level deep.*
 
