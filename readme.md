@@ -49,7 +49,7 @@ One-to-one relationships can sometimes just be modeled with simple attributes. A
 
 ###One-to-Many
 
-Each tree "has many" leaves, and each leaf "belongs to" the one tree it grew from.
+Each leaf "belongs to" the one tree it grew from, and each tree "has many" leaves.
 
 <img src="https://raw.githubusercontent.com/sf-wdi-22-23/modules-23/master/w03-intro-backend-with-express/d4-weekend-lab/img/one_to_many.png" alt="one to many erd" width="250">
 
