@@ -451,8 +451,8 @@ Sprint 3 of the [Mongoose Books App](https://github.com/SF-WDI-LABS/mongoose-boo
 Remember RESTful routing? It's the most popular modern convention for designing resource paths for nested data. Here is an example of an application that has routes for `Store` and `Item` models:
 
 ###RESTful Routing
-|| | |
-|---|---|---|
+| | | | |
+|---|---|---|---|
 | **HTTP Verb** | **Path** | **Description** | **Key Mongoose Method(s)** |
 | GET | /stores | Get all stores | `.find` |
 | POST | /stores | Create a store | `new` `.save` |
