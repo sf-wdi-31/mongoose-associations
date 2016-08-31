@@ -33,7 +33,7 @@ var Food = mongoose.model("Food", foodSchema);
 var Ingredient = mongoose.model("Ingredient", ingredientSchema);
 
 // Embedded Data
-var TweetSchema = new Schema({
+var tweetSchema = new Schema({
   text: String,
   date: Date
 });
