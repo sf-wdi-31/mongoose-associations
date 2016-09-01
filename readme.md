@@ -54,7 +54,7 @@ One-to-one relationships can sometimes just be modeled with simple attributes. A
 
 Each leaf "belongs to" the one tree it grew from, and each tree "has many" leaves.
 
-![one to many erd example](https://cloud.githubusercontent.com/assets/3254910/18140906/4edc5a0c-6f6c-11e6-8728-ca2e4cedbf12.png)
+![one to many erd example](https://cloud.githubusercontent.com/assets/3254910/18182445/e4bddb6c-7044-11e6-9099-314b773724f3.png)
 
 
 ###Many-to-Many
